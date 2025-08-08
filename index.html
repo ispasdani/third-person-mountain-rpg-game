@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./src/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Third‑Person Mountain & Castle</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background: #0b0d14;
+    }
+
+    #app {
+      width: 100%;
+      height: 100%;
+    }
+
+    .hud {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      color: #e7e9ee;
+      font: 14px/1.3 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      opacity: .85;
+    }
+
+    .hud kbd {
+      background: #1d2230;
+      border: 1px solid #333a52;
+      border-radius: 4px;
+      padding: 2px 5px;
+      margin: 0 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+  <div class="hud">
+    <div><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> move • Click to slash • Drag to orbit camera</div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
